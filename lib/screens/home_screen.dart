@@ -45,9 +45,9 @@ class _HomeScreenState extends State<HomeScreen> {
                   style: context.textTheme.displayLarge,
                   gradient: LinearGradient(
                     colors: [
-                      context.colorScheme.secondary,
+                      context.colorScheme.primaryContainer,
                       context.colorScheme.primary,
-                      context.colorScheme.secondary,
+                      context.colorScheme.primaryContainer,
                     ],
                   ),
                 ),
