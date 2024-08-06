@@ -8,8 +8,10 @@ import 'package:skribla_web/screens/terms_screen.dart';
 import 'package:skribla_web/theme/colors.dart';
 import 'package:skribla_web/util/config.dart';
 import 'package:skribla_web/util/context_utils.dart';
+import 'package:url_strategy/url_strategy.dart';
 
 void main() async {
+  setPathUrlStrategy();
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
