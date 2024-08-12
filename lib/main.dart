@@ -1,6 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flex_color_scheme/flex_color_scheme.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:skribla_web/firebase_options.dart';
 import 'package:skribla_web/screens/home_screen.dart';
 import 'package:skribla_web/screens/privacy_screen.dart';
@@ -11,6 +12,8 @@ import 'package:skribla_web/util/context_utils.dart';
 import 'package:url_strategy/url_strategy.dart';
 
 void main() async {
+  final binding = WidgetsFlutterBinding.ensureInitialized();
+  FlutterNativeSplash.preserve(widgetsBinding: binding);
   setPathUrlStrategy();
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,

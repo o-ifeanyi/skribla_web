@@ -2,6 +2,7 @@
 import 'dart:html' as html;
 
 import 'package:flutter/material.dart';
+import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:phosphor_flutter/phosphor_flutter.dart';
 import 'package:skribla_web/util/config.dart';
 import 'package:skribla_web/util/constants.dart';
@@ -16,6 +17,12 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+  @override
+  void initState() {
+    super.initState();
+    FlutterNativeSplash.remove();
+  }
+
   @override
   Widget build(BuildContext context) {
     final buttonStyle = ButtonStyle(
