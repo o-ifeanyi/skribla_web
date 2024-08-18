@@ -1,9 +1,9 @@
 abstract class Constants {
   static const email = 'skriblaapp@gmail.com';
-  static const web =
-      "https://play.google.com/store/apps/details?id=com.ifeanyi.read";
-  static const playStore =
-      "https://play.google.com/store/apps/details?id=com.ifeanyi.read";
-  static const appStore =
-      "https://apps.apple.com/us/app/read-text-to-speech/id6479220259";
+  static const web = "https://app.skribla.com";
+  static const android =
+      "https://play.google.com/store/apps/details?id=com.skribla.android.prod";
+  static const iOS = "https://apps.apple.com/us/app/skribla/id6608960206";
+  static const macOS = "https://apps.apple.com/us/app/skribla/id6642646109";
+  static const windowStore = "";
 }

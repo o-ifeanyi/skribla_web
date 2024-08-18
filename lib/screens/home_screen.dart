@@ -25,18 +25,18 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final buttonStyle = ButtonStyle(
-      shape: WidgetStateProperty.all(
-        RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(8),
-        ),
+    final buttonStyle = FilledButton.styleFrom(
+      textStyle: context.textTheme.bodyMedium?.copyWith(
+        fontWeight: FontWeight.w600,
+      ),
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(8),
       ),
     );
     return Scaffold(
       body: Padding(
         padding: EdgeInsets.symmetric(
           horizontal: context.screenSize.width * 0.07,
-          vertical: 15,
         ),
         child: Center(
           child: SingleChildScrollView(
@@ -72,46 +72,57 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 Config.vGap30,
                 Wrap(
-                  spacing: 20,
+                  spacing: 30,
                   runSpacing: 20,
                   alignment: WrapAlignment.center,
                   children: [
                     FilledButton.icon(
-                      onPressed: null,
-                      // onPressed: () =>
-                      //     html.window.open(Constants.web, '_blank'),
+                      onPressed: () =>
+                          html.window.open(Constants.web, '_blank'),
                       style: buttonStyle,
                       icon: const Icon(PhosphorIconsBold.globe),
                       label: const Padding(
                         padding: EdgeInsets.symmetric(vertical: 15),
-                        child: Text('Web (soon)'),
+                        child: Text('Web'),
                       ),
                     ),
                     FilledButton.icon(
-                      onPressed: null,
+                      onPressed: () =>
+                          html.window.open(Constants.android, '_blank'),
                       style: buttonStyle,
                       icon: const Icon(PhosphorIconsBold.googlePlayLogo),
                       label: const Padding(
                         padding: EdgeInsets.symmetric(vertical: 15),
-                        child: Text('Android (soon)'),
+                        child: Text('Android'),
                       ),
                     ),
                     FilledButton.icon(
-                      onPressed: null,
+                      onPressed: () =>
+                          html.window.open(Constants.iOS, '_blank'),
                       style: buttonStyle,
                       icon: const Icon(PhosphorIconsBold.appStoreLogo),
                       label: const Padding(
                         padding: EdgeInsets.symmetric(vertical: 15),
-                        child: Text('iOS (soon)'),
+                        child: Text('iOS'),
+                      ),
+                    ),
+                    FilledButton.icon(
+                      onPressed: () =>
+                          html.window.open(Constants.macOS, '_blank'),
+                      style: buttonStyle,
+                      icon: const Icon(PhosphorIconsBold.laptop),
+                      label: const Padding(
+                        padding: EdgeInsets.symmetric(vertical: 15),
+                        child: Text('macOS'),
                       ),
                     ),
                     FilledButton.icon(
                       onPressed: null,
                       style: buttonStyle,
-                      icon: const Icon(PhosphorIconsBold.laptop),
+                      icon: const Icon(PhosphorIconsBold.windowsLogo),
                       label: const Padding(
                         padding: EdgeInsets.symmetric(vertical: 15),
-                        child: Text('MacOS (soon)'),
+                        child: Text('Windows (soon)'),
                       ),
                     ),
                   ],
@@ -125,6 +136,8 @@ class _HomeScreenState extends State<HomeScreen> {
       bottomNavigationBar: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
+          const Divider(height: 0),
+          const SizedBox(height: 20),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [

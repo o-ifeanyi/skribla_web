@@ -39,7 +39,7 @@ class MainApp extends StatelessWidget {
         visualDensity: FlexColorScheme.comfortablePlatformDensity,
         useMaterial3: true,
         swapLegacyOnMaterial3: true,
-        fontFamily: 'Sora',
+        fontFamily: 'MoreSugarRegular',
         textTheme: Config.textTheme,
       ),
       initialRoute: '/',

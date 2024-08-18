@@ -2,57 +2,18 @@ import 'package:flutter/material.dart';
 
 class Config {
   static TextTheme get textTheme => const TextTheme(
-        displayLarge: TextStyle(
-          fontSize: 50,
-          fontWeight: FontWeight.bold,
-          height: 1.2,
-        ),
-        displayMedium: TextStyle(
-          fontSize: 35,
-          fontWeight: FontWeight.bold,
-          height: 1.2,
-        ),
-        displaySmall: TextStyle(
-          fontSize: 20,
-          fontWeight: FontWeight.bold,
-          height: 1.2,
-        ),
-        titleLarge: TextStyle(
-          fontSize: 32,
-          fontWeight: FontWeight.w700,
-          height: 1.2,
-        ),
-        titleMedium: TextStyle(
-          fontSize: 28,
-          fontWeight: FontWeight.w700,
-          height: 1.2,
-        ),
-        titleSmall: TextStyle(
-          fontSize: 24,
-          fontWeight: FontWeight.w700,
-          height: 1.2,
-        ),
-        bodyLarge: TextStyle(
-          fontSize: 16,
-          height: 1.4,
-        ),
-        bodyMedium: TextStyle(
-          fontSize: 14,
-          height: 1.4,
-        ),
-        bodySmall: TextStyle(
-          fontSize: 12,
-          height: 1.4,
-        ),
-        labelLarge: TextStyle(
-          fontSize: 14,
-          height: 1.4,
-        ),
-        labelMedium: TextStyle(
-          fontSize: 12,
-          height: 1.4,
-        ),
-        labelSmall: TextStyle(fontSize: 10),
+        displayLarge: TextStyle(fontSize: 50, fontFamily: 'MoreSugarMedium'),
+        displayMedium: TextStyle(fontSize: 35, fontFamily: 'MoreSugarMedium'),
+        displaySmall: TextStyle(fontSize: 20, fontFamily: 'MoreSugarMedium'),
+        titleLarge: TextStyle(fontSize: 32, fontFamily: 'MoreSugarMedium'),
+        titleMedium: TextStyle(fontSize: 28, fontFamily: 'MoreSugarMedium'),
+        titleSmall: TextStyle(fontSize: 24, fontFamily: 'MoreSugarMedium'),
+        bodyLarge: TextStyle(fontSize: 18, fontFamily: 'MoreSugarRegular'),
+        bodyMedium: TextStyle(fontSize: 16, fontFamily: 'MoreSugarRegular'),
+        bodySmall: TextStyle(fontSize: 14, fontFamily: 'MoreSugarRegular'),
+        labelLarge: TextStyle(fontSize: 14, fontFamily: 'MoreSugarMedium'),
+        labelMedium: TextStyle(fontSize: 12, fontFamily: 'MoreSugarRegular'),
+        labelSmall: TextStyle(fontSize: 10, fontFamily: 'MoreSugarRegular'),
       );
 
   static Widget get hGap5 => const SizedBox(width: 5);

@@ -26,6 +26,11 @@ flutter:
   assets:
     - assets/images/
   fonts:
-    - family: Sora
+    - family: MoreSugarMedium
       fonts:
-        - asset: assets/fonts/Sora-VariableFont.ttf
+        - asset: assets/fonts/more-sugar-medium.ttf
+          weight: 800
+    - family: MoreSugarRegular
+      fonts:
+        - asset: assets/fonts/more-sugar-regular.ttf
+          weight: 400

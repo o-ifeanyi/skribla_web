@@ -40,7 +40,7 @@ Address technical issues and provide support."""),
           Text('Third-Party Services', style: context.textTheme.titleSmall),
           Config.vGap10,
           const Text(
-              'We utilize third-party services to facilitate our data collection and analysis. These third parties include Mixpanel. These services may have their own privacy policies, and we encourage you to review them.'),
+              'We utilize third-party services to facilitate our data collection and analysis. These third parties include Firebase, Sentry and LukeHog. These services may have their own privacy policies, and we encourage you to review them.'),
           Config.vGap15,
           Text('Security', style: context.textTheme.titleSmall),
           Config.vGap10,

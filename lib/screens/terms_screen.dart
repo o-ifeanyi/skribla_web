@@ -38,7 +38,7 @@ Thank you for choosing Skribla, owned by Ifeanyi Onuoha ("we", "us", "our"). Ple
               style: context.textTheme.titleSmall),
           Config.vGap10,
           const Text(
-              'We respect the privacy of our users. We collect telemetry information for the purposes of improving our product for our users. This data is collected through third-party services including Mixpanel. For more information, please refer to our Privacy Policy.'),
+              'We respect the privacy of our users. We collect telemetry information for the purposes of improving our product for our users. This data is collected through third-party services including Firebase, Sentry and LukeHog. For more information, please refer to our Privacy Policy.'),
           Config.vGap15,
           Text('Limitations of Liability', style: context.textTheme.titleSmall),
           Config.vGap10,
