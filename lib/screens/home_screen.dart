@@ -33,6 +33,8 @@ class _HomeScreenState extends State<HomeScreen> {
         borderRadius: BorderRadius.circular(8),
       ),
     );
+    final footerTextStyle = context.textTheme.bodySmall
+        ?.copyWith(decoration: TextDecoration.underline);
     return Scaffold(
       body: Padding(
         padding: EdgeInsets.symmetric(
@@ -138,27 +140,33 @@ class _HomeScreenState extends State<HomeScreen> {
         children: [
           const Divider(height: 0),
           const SizedBox(height: 20),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
+          Wrap(
+            spacing: 30,
+            alignment: WrapAlignment.center,
             children: [
               Text(
-                '© Ifeanyi 2024',
+                '© Ifeanyi ${DateTime.now().year}',
                 style: context.textTheme.bodySmall,
+              ),
+              InkWell(
+                onTap: () => html.window.open(Constants.github, '_blank'),
+                child: Text(
+                  'GitHub',
+                  style: footerTextStyle,
+                ),
               ),
               InkWell(
                 onTap: () => Navigator.of(context).pushNamed('/privacy'),
                 child: Text(
                   'Privacy',
-                  style: context.textTheme.bodySmall
-                      ?.copyWith(decoration: TextDecoration.underline),
+                  style: footerTextStyle,
                 ),
               ),
               InkWell(
                 onTap: () => Navigator.of(context).pushNamed('/terms'),
                 child: Text(
                   'Terms',
-                  style: context.textTheme.bodySmall
-                      ?.copyWith(decoration: TextDecoration.underline),
+                  style: footerTextStyle,
                 ),
               ),
               InkWell(
@@ -175,8 +183,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 },
                 child: Text(
                   'Contact',
-                  style: context.textTheme.bodySmall
-                      ?.copyWith(decoration: TextDecoration.underline),
+                  style: footerTextStyle,
                 ),
               ),
             ],
