@@ -145,7 +145,7 @@ class _HomeScreenState extends State<HomeScreen> {
             alignment: WrapAlignment.center,
             children: [
               Text(
-                '© Ifeanyi ${DateTime.now().year}',
+                '© Skribla ${DateTime.now().year}',
                 style: context.textTheme.bodySmall,
               ),
               InkWell(

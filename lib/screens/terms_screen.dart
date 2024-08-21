@@ -55,7 +55,7 @@ Thank you for choosing Skribla, owned by Ifeanyi Onuoha ("we", "us", "our"). Ple
           const Text("""
 If you have questions or concerns about our Privacy Policy, please contact us at: ${Constants.email}
 
-© 2024 Ifeanyi Onuoha. All rights reserved.
+© 2024 Skribla. All rights reserved.
 """),
           Config.vGap15,
         ],
