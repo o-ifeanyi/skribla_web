@@ -34,6 +34,30 @@ Thank you for choosing Skribla, owned by Ifeanyi Onuoha ("we", "us", "our"). Ple
           const Text(
               'We may modify these Terms at any time, and such modifications will be effective immediately upon posting the modified Terms on our Service. You agree to review the Terms periodically to be aware of such modifications and your continued access or use of the Service shall be deemed your conclusive acceptance of the modified Terms.'),
           Config.vGap15,
+          Text('Prohibited Conduct and Content',
+              style: context.textTheme.titleSmall),
+          Config.vGap10,
+          const Text('''
+Skribla is committed to providing a safe and enjoyable environment for all users. As such, we have a strict policy against objectionable content and abusive behavior. Users are prohibited from:
+
+Posting or sharing any content that is:
+
+- Offensive, vulgar, or otherwise inappropriate for a public audience.
+- Discriminatory or hateful towards any individual or group based on race, ethnicity, religion, gender, sexual orientation, disability, or any other protected characteristic.
+- Harassing, threatening, or intimidating towards other users.
+- Violent, graphic, or promotes harm to oneself or others.
+- Sexually explicit or suggestive.
+
+Engaging in behavior that is:
+
+- Abusive, bullying, or intended to cause emotional distress to others.
+- Spamming, trolling, or otherwise disrupting the normal flow of gameplay or conversation.
+- Impersonating other users or misrepresenting your identity.
+- Using cheats, exploits, or any other unauthorized tools or methods to gain an unfair advantage.
+
+Skribla reserves the right to immediately remove any content that violates these guidelines and to suspend or permanently ban users who engage in prohibited conduct. By using Skribla, you agree to adhere to these standards and help maintain a positive community for everyone.
+'''),
+          Config.vGap15,
           Text('Privacy and Data Collection',
               style: context.textTheme.titleSmall),
           Config.vGap10,
